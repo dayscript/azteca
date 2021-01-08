@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/azteca.css: {}
+  js:
+    js/azteca.js: {}
