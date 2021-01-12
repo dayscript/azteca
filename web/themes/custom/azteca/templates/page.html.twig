@@ -161,12 +161,12 @@
       {% if page.footer_first or page.footer_middle or page.footer_last %}
         <footer class="row">
           {% if page.footer_first %}
-            <div id="footer-first" class="large-4 columns">
+            <div id="footer-first" class="row">
               {{ page.footer_first }}
             </div>
           {% endif %}
           {% if page.footer_middle %}
-            <div id="footer-middle" class="large-4 columns">
+            <div id="footer-middle" class="row">
               {{ page.footer_middle }}
             </div>
           {% endif %}
@@ -177,15 +177,9 @@
           {% endif %}
         </footer>
       {% endif %}
-      {% if block_copyright_show %}
-        <div class="bottom-bar callout secondary large-12 columns">
-          {% if not block_copyright_custom_text %}
-            <p>&copy; {{ "now"|date('Y') }} {{ site_name }} {{ 'All rights reserved.'|t }}</p>
-          {% else %}
-            {{ block_copyright }}
-          {% endif %}
-        </div>
-      {% endif %}
+      <div class="bottom-bar row text-center">
+          <p>{{ 'All rights reserved.'|t }} &copy; Azteca Comunicaciones Colombia S.A.</p>
+      </div>
     </div>
   </div>
 </div>
