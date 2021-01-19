@@ -67,13 +67,17 @@
         {% endif %}
       {% endif %}
 
-      <header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
-        {% if page.header %}
-          <div class="large-12 columns">
-            {{ page.header }}
-          </div>
-        {% endif %}
-      </header>
+      <div class="top-bar-container" data-sticky-container>
+        <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+          <header class="row large-collapse" role="banner" aria-label="{{ 'Site header'|t }}">
+            {% if page.header %}
+              <div class="large-12 columns header-container">
+                {{ page.header }}
+              </div>
+            {% endif %}
+          </header>
+        </div>
+      </div>
 
       <div class="row">
         {% if show_account_info %}

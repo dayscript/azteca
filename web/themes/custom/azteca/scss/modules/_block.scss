@@ -1,0 +1,88 @@
+.pt4{
+  padding-top: 4rem;
+}
+.pb4{
+  padding-bottom: 4rem;
+}
+#block-views-block-home-slider-block-1 {
+  background-color: #f5f7f9;
+
+  .owl-stage-outer {
+    height: 85vh !important;
+  }
+
+  .views-field-field-imagen-portada {
+    .field-content {
+      &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.5340511204481793) 0%, rgba(255,255,255,0) 61%, rgba(255,255,255,0) 100%);
+        width: 100%;
+        height: -webkit-fill-available;
+      }
+    }
+  }
+  .info {
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    width: 100%;
+
+    .titulo {
+      //font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.2rem;
+    }
+
+    .subtitulo {
+      //font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      //text-transform: uppercase;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.1rem;
+    }
+    .cuerpo{
+      max-width: 50%;
+    }
+
+    .ver-mas {
+      display: inline-block;
+      a {
+        background-color: $primary-color;
+        border-radius: 4px;
+        padding: .6rem 2rem;
+        color: #fff;
+      }
+    }
+  }
+  .owl-controls.clickable{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .owl-page span{
+      width: 22px;
+      height: 6px;
+      margin: 5px 2px;
+      border-radius: 5px;
+      background: $primary-color;
+    }
+  }
+}
+.block-tellamamoshome{
+  text-align: center;
+  padding: 2.8rem 8rem;
+  background-color: #E8E8E8;
+  a.button{
+    padding: 1.1rem 8.6rem;
+    border-radius: 8px;
+    font-size: 1.188rem;
+  }
+}
