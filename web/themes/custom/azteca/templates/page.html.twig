@@ -163,14 +163,14 @@
         {% endif %}
       </div>
       {% if page.footer_first or page.footer_middle or page.footer_last %}
-        <footer class="row">
+        <footer class="page-footer">
           {% if page.footer_first %}
             <div id="footer-first" class="row">
               {{ page.footer_first }}
             </div>
           {% endif %}
           {% if page.footer_middle %}
-            <div id="footer-middle" class="row">
+            <div id="footer-middle">
               {{ page.footer_middle }}
             </div>
           {% endif %}
@@ -181,7 +181,7 @@
           {% endif %}
         </footer>
       {% endif %}
-      <div class="bottom-bar row text-center">
+      <div class="bottom-bar text-center">
           <p>{{ 'All rights reserved.'|t }} &copy; Azteca Comunicaciones Colombia S.A.</p>
       </div>
     </div>
