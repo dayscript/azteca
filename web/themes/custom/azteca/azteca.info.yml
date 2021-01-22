@@ -26,6 +26,7 @@ regions:
   content: Content
   sidebar_first: 'Left sidebar'
   sidebar_second: 'Right sidebar'
+  fullwidth: 'full width'
   footer_first: 'Footer first column'
   footer_middle: 'Footer middle column'
   footer_last: 'Footer last column'

@@ -22,13 +22,18 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^4.1",
         "drupal/ds": "^3.9",
         "drupal/field_formatter_class": "^1.4",
+        "drupal/field_group": "^3.1",
+        "drupal/menu_item_extras": "^2.13",
         "drupal/module_filter": "^3.1",
+        "drupal/owlcarousel": "^1.0@alpha",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/social_media_links": "^2.7",
         "drupal/svg_image": "^1.14",
+        "drupal/views_zurb_foundation": "^2.0@alpha",
         "drupal/zurb_foundation": "^6.0@alpha"
     },
     "conflict": {

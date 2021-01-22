@@ -139,7 +139,7 @@
       {% endif %}
 
       <div class="row">
-        <main id="main" class="{{ main_grid }} columns" role="main">
+        <main id="main" class="row {{ main_grid }} columns" role="main">
           {% if page.highlighted %}
             {% apply spaceless %}
               {{ page.highlighted }}
@@ -162,6 +162,13 @@
           </div>
         {% endif %}
       </div>
+      <div class="fullwidth">
+        {% if page.fullwidth %}
+          {% apply spaceless %}
+            {{ page.fullwidth }}
+          {% endapply %}
+        {% endif %}
+      </div>
       {% if page.footer_first or page.footer_middle or page.footer_last %}
         <footer class="page-footer">
           {% if page.footer_first %}
@@ -182,7 +189,7 @@
         </footer>
       {% endif %}
       <div class="bottom-bar text-center">
-          <p>{{ 'All rights reserved.'|t }} &copy; Azteca Comunicaciones Colombia S.A.</p>
+          <div>{{ 'All rights reserved.'|t }} &copy; Azteca Comunicaciones Colombia S.A.</div>
       </div>
     </div>
   </div>

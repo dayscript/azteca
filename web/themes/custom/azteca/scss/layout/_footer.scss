@@ -1,6 +1,7 @@
 // Non-modular or client styles for .l-footer region.
 footer{
 	#footer-first{
+		padding: 2rem 0;
 		> div {
 			display: flex;
 			nav{
@@ -31,4 +32,5 @@ footer{
 .bottom-bar{
 	background-color: $primary-color;
 	color: #fff;
+	padding: .4rem 0;
 }

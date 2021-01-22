@@ -70,14 +70,22 @@
     }
   }
 }
-.block-tellamamoshome{
-  text-align: center;
-  padding: 2.8rem 8rem;
+.block-tellamamoshome,
+.block-tellamamoshome-2{
+  padding: 2.8rem 13rem;
   background-color: #E8E8E8;
-  a.button{
-    padding: 1.1rem 8.6rem;
-    border-radius: 8px;
-    font-size: 1.188rem;
+  .te-llamamos{
+    display: flex;
+    align-items: center;
+    .tel{
+      font-size: 1.563rem;
+    }
+    a.button{
+      padding: 1.1rem 8.6rem;
+      border-radius: 8px;
+      font-size: 1.188rem;
+      margin: 0;
+    }
   }
 }
 #block-views-block-internet-simetrico-empresarial-block-1{
@@ -102,71 +110,150 @@
 #block-views-block-internet-simetrico-empresarial-block-2{
   .views-row{
     position: relative;
-  }
-  .info {
-    position: absolute;
-    left: 0;
-    bottom: 15%;
-    width: 100%;
+    .views-field-field-imagen{
+      img{
+        height: 292px;
+      }
+    }
+    .info {
+      position: absolute;
+      left: 0;
+      bottom: 25%;
+      width: 100%;
 
-    .titulo {
-      //font-family: 'Montserrat', sans-serif;
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.2rem;
-      color: #fff;
-    }
-    .cuerpo{
-      max-width: 50%;
-      color: #fff;
-    }
-    .ver-mas {
-      display: inline-block;
-      a {
-        background-color: $primary-color;
-        border-radius: 4px;
-        padding: .6rem 2rem;
+      .titulo {
+        //font-family: 'Montserrat', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.2rem;
         color: #fff;
+      }
+      .cuerpo{
+        max-width: 50%;
+        color: #fff;
+      }
+      .ver-mas {
+        display: inline-block;
+        a {
+          background-color: $primary-color;
+          border-radius: 4px;
+          padding: .6rem 2rem;
+          color: #fff;
+        }
       }
     }
   }
 }
 #block-secondarymenuhome{
+  margin: auto;
+  padding: 2rem;
+  display: block;
+  background-color: #E8E8E8;
   ul.menu{
-/*     margin: auto;
-    padding: 2rem;
-    display: block;
-    background-color: #E8E8E8; */
-    li{
-      width: 12%;
-      display: block;
-      background: #e60f4b;
-      height: 112px;
-      position: relative;
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+    .card-item{
+      margin: auto;
       a{
-        color: #fefefe;
-        position: relative;
-        -ms-transform: translateY(-35%);
-        transform: translateY(45%);
-        top: 50%;
-        padding: 0.7rem 0.4rem;
-        &:after{
-          position: absolute;
-          background: url(../images/icons/mi-cuenta.svg);
-          background-size: 75px 75px;
-          background-repeat: no-repeat;
-          top: 0%;
-          -ms-transform: translateX(-50%);
-          bottom: 100px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          width: 75px;
-          height: 75px;
-          content: "";
+        color: #fff;
+        background-color: $primary-color;
+        border-radius: 8px;
+      }
+      a:hover{
+        background-color: #FED104;
+      }
+      li{
+        width: 100%;
+        padding-bottom: 1rem;
+        .field-name-field-imagen{
+          img{
+            width: 75px;
+            height: 75px;
+          }
         }
       }
+    }
+  }
+}
+#block-socialmedialinks{
+  .social-media-links--platforms{
+    margin: 0;
+    padding: .4rem 0;
+    a{
+      background-color: #728195;
+      border-radius: 12px;
+      width: 24px;
+      height: 24px;
+      display: block;
+      span{
+        color: #fff;
+      }
+    }
+  }
+}
+#block-views-block-titulo-detalle-block-1{
+  .views-row{
+    position: relative;
+    .views-field-field-imagen-portada{
+      &::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #000;
+        background: linear-gradient(90deg, rgba(21,86,168,1) 0%, rgba(255,255,255,0) 61%, rgba(255,255,255,0) 100%);
+        width: 100%;
+        height: -webkit-fill-available;
+      }
+    }
+    .info {
+      position: absolute;
+      left: 0;
+      bottom: 40%;
+      width: 100%;
+      .titulo {
+        //font-family: 'Montserrat', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.2rem;
+        color: #fff;
+      }
+    }
+  }
+}
+#block-azteca-breadcrumbs{
+  ul.breadcrumbs{
+    li{
+      &::after{
+        margin: 0 .25rem;
+      }
+      a{
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+#block-views-block-detalle-contenido-block-1{
+  padding: 5rem 0;
+  .paragraph--type--servicios{
+    margin-bottom: 1rem;
+    .field-name-field-descripcion{
+      color: #4F4F4F;
+      min-height: 80px;
+    }
+    .field-name-field-enlace{
+        display: inline-block;
+        margin: .4rem 0; 
+        a {
+          background-color: $primary-color;
+          border-radius: 4px;
+          padding: .6rem 2rem;
+          color: #fff;
+        }
     }
   }
 }
