@@ -1,8 +1,20 @@
 // Non-modular or client styles for the .l-content region.
 main{
 	.node--type-page{
-		align-items: center;
-	    display: flex;
+		.encabezado-page{
+			legend{
+				display: none;
+			}
+			.fieldset-wrapper{
+				align-items: center;
+				display: flex;
+				.field-name-field-lead{
+					color: #4F4F4F;
+					font-size: 1.25rem;
+					font-weight: 700;
+				}
+			}
+		}
 	    .body{
 	    	color: #4F4F4F;
 	    }
@@ -12,7 +24,7 @@ main{
 		margin: auto;
 		.encabezado-servicio{
 			margin-bottom: 2rem;
-			.fieldset-legend{
+			legend{
 				display: none;
 			}
 			.fieldset-wrapper{
@@ -28,5 +40,14 @@ main{
 		.body{
 			color: #4F4F4F;
 		}
+	}
+}
+.section-pagos{
+	h3{
+		color: $primary-color;
+	}
+	.body{
+		max-width: 60rem;
+		margin: auto;
 	}
 }
