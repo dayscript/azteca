@@ -35,6 +35,7 @@
         "drupal/responsive_menu": "^4.4",
         "drupal/social_media_links": "^2.7",
         "drupal/svg_image": "^1.14",
+        "drupal/views_accordion": "^2.0",
         "drupal/views_zurb_foundation": "^2.0@alpha",
         "drupal/we_megamenu": "^1.11",
         "drupal/zurb_foundation": "^6.0@alpha"
