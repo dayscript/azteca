@@ -1,5 +1,6 @@
 // Non-modular or client styles for .l-footer region.
 footer{
+	
 	#footer-first{
 		padding: 2rem 0;
 		> div {
@@ -9,9 +10,9 @@ footer{
 					li{
 						width: 100%;
 						a{
-							color: #888;
+							color: #666;
 							font-size: .9rem;
-							font-weight: 600;
+							line-height: 1.6em !important;
 							padding: 0.4rem 0rem;
 						}
 					}
@@ -33,4 +34,17 @@ footer{
 	background-color: $primary-color;
 	color: #fff;
 	padding: .4rem 0;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem 0rem;
+}
+section#block-mapadelsitio{
+	a{
+		color: #666;
+		font-size: .9rem;
+		line-height: 1.6em !important;
+		padding: 0.4rem 0rem;
+	}
 }
