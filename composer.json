@@ -39,6 +39,7 @@
         "drupal/views_accordion": "^2.0",
         "drupal/views_zurb_foundation": "^2.0@alpha",
         "drupal/we_megamenu": "^1.11",
+        "drupal/webform": "^6.0",
         "drupal/zurb_foundation": "^6.0@alpha"
     },
     "conflict": {
