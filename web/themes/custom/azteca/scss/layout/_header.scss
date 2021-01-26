@@ -4,16 +4,15 @@
 .sticky-topbar{
   z-index: 9;
   &.is-stuck {
-    //background-color: #fefefe;
-    background-color: red;
+    background-color: #fff;
     -webkit-box-shadow: 0px 1px 5px 0 rgba(0,0,0,0.1); 
     box-shadow: 0px 1px 5px 0 rgba(0,0,0,0.1);
   }
 }
 header {
-	@media screen and (min-width: 40em) {
-		padding: 1.8rem 0;
-	}
+	//@media screen and (min-width: 40em) {
+		//padding: 1.8rem 0;
+	//}
 	.header-container > div{
 		display: flex;
 		align-items: center;
@@ -23,23 +22,66 @@ header {
 			margin: 0;
 			.we-mega-menu-ul {
 				background-color: white;
+				display: inline-block;
+				float: right;
 				> .we-mega-menu-li{
 					border-left: none;
 					> a{
-						color: #888;
-					    font-size: .9rem;
-					    font-weight: 600;
+						color: #000;
+					    font-size: 1rem;
+					    font-weight: 400;
 					    background-color: white;
 					    text-transform: initial;
-					    background: #fefefe;
+						background: #fff;
+						padding: 1rem !important;
+						font-family: $body-font-family;
+						transition: ease all 0.4s;
+						&:after{
+							right: 0rem !important; 
+						}
+						&:hover{
+							color: $primary-color;
+							transition: ease all 0.4s;
+						}
 					}
 					.we-mega-menu-submenu{
 						position: fixed;
 						width: 100%;
 						margin: 0;
+						font-size: 1rem !important;
+						a{
+							font-family: $body-font-family;
+							color: #000;
+							font-weight: 600;
+						}
+						.field-item{
+							font-family: $body-font-family;
+							img{
+								width: 50px !important;
+								height: 50px !important;
+								min-width: 50px;
+							}
+						}
+						
 					}
 				}
 			}
 		}
+	}
+	.we-mega-menu-ul .dropdown-menu>a:before, .we-mega-menu-ul .dropdown-menu>a:after, .we-mega-menu-ul .dropdown-menu>span:before, .we-mega-menu-ul .dropdown-menu>span:after {
+		right: 0 !important;
+	}
+}
+.navbar-default {
+    background-color: #fff;
+}
+.navbar-we-mega-menu {
+	background-color: #fff;
+}
+.we-mega-menu-submenu {
+    border-top: 6px solid $primary-color;
+	margin-bottom: 2rem;
+	.card-item{
+		margin-bottom: 1rem;
 	}
 }

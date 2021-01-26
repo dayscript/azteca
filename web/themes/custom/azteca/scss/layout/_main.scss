@@ -8,10 +8,9 @@ main{
 			.fieldset-wrapper{
 				align-items: center;
 				display: flex;
-				.field-name-field-lead{
-					color: #4F4F4F;
-					font-size: 1.25rem;
-					font-weight: 700;
+				.field-name-field-lead p{
+					font-size: 1.6rem;
+					line-height: 1.5em;
 				}
 			}
 		}
@@ -20,7 +19,6 @@ main{
 	    }
 	}
 	.node--type-servicio{
-		max-width: 60rem;
 		margin: auto;
 		.encabezado-servicio{
 			margin-bottom: 2rem;
@@ -30,16 +28,27 @@ main{
 			.fieldset-wrapper{
 				align-items: center;
 				display: flex;
-				.field-name-field-lead{
-					color: #4F4F4F;
-					font-size: 1.25rem;
-					font-weight: 700;
+				.field-name-field-lead p{
+					font-size: 1.6rem;
+					line-height: 1.5em;
 				}
 			}
 		}
-		.body{
-			color: #4F4F4F;
+		.field-node--body.field-name-body {
+			padding: 0 16rem;
+			margin-bottom: 3rem;
 		}
+		.field.field-node--field-image.field-name-field-image{
+			img{
+				border-radius: 8px;
+			}
+		}
+	}
+}
+
+fieldset.encabezado-page{
+	img{
+		border-radius: 8px;
 	}
 }
 .section-pagos{
