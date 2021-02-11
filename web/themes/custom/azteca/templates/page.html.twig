@@ -122,6 +122,23 @@
       </div>
       {% endif %}
 
+      {% if page.slide %}
+      <div class="slide">
+        <div class="">
+          {{ page.slide }}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if page.llama %}
+      <div class="llama">
+        <div class="">
+          {{ page.llama }}
+        </div>
+      </div>
+      {% endif %}
+      
+
       {% if page.main %}
       <div class="l-main">
         <div>
@@ -129,6 +146,8 @@
         </div>
       </div>
       {% endif %}
+
+   
 
       {% if page.help %}
       <div class="l-help row">

@@ -29,6 +29,10 @@
     .subtitulo {
       font-size: 2.5rem;
       letter-spacing: -1px;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.6rem;
+        letter-spacing: 0px;
+        } 
     }
     .cuerpo{
       font-size: 1.1rem;
@@ -60,18 +64,29 @@
     }
   }
 }
+.llama {
+  background-color: #E8E8E8;
+}
 .block-tellamamoshome,
 .block-tellamamoshome-2{
-  padding: 2.8rem 13rem;
-  background-color: #E8E8E8;
+ 
   .te-llamamos{
-    display: flex;
-    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: #E8E8E8;
     p{
       margin-bottom: 0.3rem !important;
     }
     .tel{
       font-size: 2rem;
+      padding-bottom: 2rem;
+      @media only screen and (max-width: 600px){
+        font-size: 1.6rem;
+        padding-bottom: 1rem !important;
+      }
     }
     a.button{
       padding: 1.1rem 8.6rem;
@@ -79,13 +94,26 @@
       font-size: 1.188rem;
       margin: 0;
     }
+    @media only screen and (max-width: 600px){
+      text-align: center;
+      .pt1{
+        padding-top: 0;
+      }
+    }
   }
 }
 #block-views-block-internet-simetrico-empresarial-block-1{
   .internet-simetrico{
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 600px){
+      display: block;
+    }
     .image{
+      margin-bottom: 0rem;
+      @media only screen and (max-width: 600px){
+        margin-bottom: 1rem;
+      }
       img{
         width: 100%;
       }
@@ -117,18 +145,27 @@
         position: relative;
        
       }
+      @media only screen and (max-width: 600px){
+        width: 320%;
+      height: 240px;
+      }
     }
     .info {
       position: absolute;
       left: 0;
       bottom: 25%;
       width: 100%;
-
+      @media only screen and (max-width: 600px){
+        bottom: 1.5rem;
+      }
       .titulo {
         font-size: 3rem;
         font-weight: 700;
         line-height: 1.2;
         color: #fff;
+        @media only screen and (max-width: 600px){
+          font-size: 2rem;
+        }
       }
       .cuerpo{
         color: #fff;
@@ -149,6 +186,9 @@
   p{
     font-size: 1.2rem !important;
     margin: 0.7rem 0 !important;
+    @media only screen and (max-width: 600px){
+      font-size: 1rem !important;
+    }
   }
 }
 #block-secondarymenuhome{
@@ -162,6 +202,9 @@
     margin-left: auto;
     .card-item{
       margin: auto;
+      @media only screen and (max-width: 600px){
+       margin-bottom: 2rem;
+      }
       a{
         color: #fff;
         background-color: $primary-color;
@@ -183,6 +226,7 @@
         }
       }
     }
+    
   }
 }
 #block-socialmedialinks{
@@ -201,7 +245,7 @@
     }
   }
 }
-#block-views-block-titulo-detalle-block-1{
+#block-views-block-titulo-detalle-block-1, section#block-views-block-titulo-detalle-block-3, section#block-views-block-titulo-detalle-block-2{
   h1 {
     color: white;
 }
@@ -218,6 +262,12 @@
       left: 0;
       bottom: 40%;
       width: 100%;
+      @media only screen and (max-width: 600px){
+        position: relative;
+        padding: 1rem 0.3rem;
+        background: $primary-color;
+        margin-bottom: 1rem;
+      }
       h1 {
         color: #fff !important;
       }
@@ -228,6 +278,9 @@
     height: 300px;
     position: relative;
     margin-bottom: 0.8rem;
+    @media only screen and (max-width: 600px){
+     display: none;
+    }
     &:after{
       position: absolute;
       width: 100%;
@@ -253,6 +306,16 @@
 }
 #block-views-block-detalle-contenido-block-1{
   padding: 5rem 0;
+  @media only screen and (max-width: 600px){
+    padding: 2rem 0;
+    text-align: center;
+    .column.column-block {
+      margin-bottom: 3rem;
+      img {
+        max-width: 100px;
+    }
+  }
+  }
   .paragraph--type--servicios{
     margin-bottom: 1rem;
     .field-name-field-descripcion{
@@ -306,6 +369,9 @@ section#block-views-block-preguntas-frecuentes-block-1{
 }
 form#views-exposed-form-nuestras-noticias-block-1{
   display: none;
+  @media only screen and (max-width: 600px){
+    display: block;
+  }
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
   border: 0px solid #003eff/*{borderColorActive}*/;
@@ -324,6 +390,9 @@ section#block-webform{
   h2.block-title {
     padding-left: 1rem;
     margin-bottom: 2rem;
+    @media only screen and (max-width: 600px){
+      padding-left: 0.6rem;
+    }
 }
 }
 section#block-lineasdeatencionblock{
@@ -335,4 +404,59 @@ section#block-lineasdeatencionblock{
     font-weight: 600;
     color: $primary-color;
   }
+}
+.section-legales{
+  .contenido{
+    padding: 2rem 8rem;
+    @media only screen and (max-width: 600px){
+      padding: 2rem 0rem;
+    } 
+}
+}
+section#block-lineasdeatencionblock{
+  display: flex;
+    align-items: center;
+    @media only screen and (max-width: 600px){
+     display: block;
+    } 
+  img{
+    margin-bottom: 1rem;
+  }
+}
+.section-noticias{
+  .node--type-article{
+    padding: 1rem 8rem;
+    @media only screen and (max-width: 600px){
+      padding: 2rem 0rem;
+    } 
+  }
+  .field-name-field-subtitulo{
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .field-name-node-post-date{
+    display: inline-block;
+    font-size: 0.9rem;
+    color: $primary-color; 
+  }
+}
+
+section#block-views-block-ofertas-de-empleo-block-1{
+  .views-field.views-field-title{
+    a{
+      color: #000;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+  .views-field.views-field-field-perfiles {
+    margin-bottom: 1rem;
+}
+.button{
+  a{
+    color: #ffffff;
+  }
+}
 }

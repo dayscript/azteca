@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1280);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1556A8,
@@ -99,7 +99,7 @@ $global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
-@include add-foundation-colors;
+@include add-foundation-colors;  
 
 // 2. Breakpoints
 // --------------
@@ -139,8 +139,8 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 26),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),

@@ -1,10 +1,11 @@
 // Non-modular or client styles for .l-footer region.
 footer{
-	
+	@media only screen and (max-width: 600px){
+      text-align: center !important;
+    }
 	#footer-first{
 		padding: 2rem 0;
 		> div {
-			display: flex;
 			nav{
 				ul.menu{
 					li{
@@ -14,6 +15,10 @@ footer{
 							font-size: .9rem;
 							line-height: 1.6em !important;
 							padding: 0.4rem 0rem;
+							@media only screen and (max-width: 600px){
+								font-size: .8rem;
+								padding: 0.3rem 0rem;
+							}
 						}
 					}
 				}
@@ -29,6 +34,10 @@ footer{
 	#footer-middle{
 		background-color: #E8E8E8;
 	}
+	
+}
+.page-footer {
+	border-top: 3px solid #e8e8e8;
 }
 .bottom-bar{
 	background-color: $primary-color;
@@ -54,5 +63,36 @@ section#block-mapadelsitio{
 		font-size: .9rem;
 		line-height: 1.6em !important;
 		padding: 0.4rem 0rem;
+		@media only screen and (max-width: 600px){
+			font-size: .8rem;
+			padding: 0.3rem 0rem;
+		}
+	}
+}
+.noticias{
+	.views-field.views-field-field-image{
+		margin-bottom: 1rem;
+	}
+	.views-field.views-field-title{
+		a{
+			font-size: 1rem;
+			color:#000;
+			font-weight: 600;
+			margin-bottom: 0.6rem;
+		}
+	}
+	.views-field.views-field-field-subtitulo {
+		font-size: 0.8rem;
+	}
+	.views-field.views-field-created{
+		font-size: 0.8rem;
+		color: $primary-color;
+	}
+	.pager li>a, .pager li>span {
+		display: inline-block;
+		padding: 10px 14px;
+		background-color: $primary-color;
+		border: 0px solid #ddd;
+		border-radius: 8px;
 	}
 }

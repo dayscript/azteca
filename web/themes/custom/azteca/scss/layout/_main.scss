@@ -8,9 +8,16 @@ main{
 			.fieldset-wrapper{
 				align-items: center;
 				display: flex;
+				@media only screen and (max-width: 600px){
+					display: block;
+				}
 				.field-name-field-lead p{
 					font-size: 1.6rem;
 					line-height: 1.5em;
+					@media only screen and (max-width: 600px){
+						font-size: 1.2rem;
+					line-height: 1.4em;
+					   }
 				}
 			}
 		}

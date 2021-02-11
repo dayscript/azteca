@@ -18,6 +18,8 @@ libraries:
 regions:
   header: Header
   meta_header: 'Meta header'
+  slide: Slide
+  llama: Llama
   help: Help
   main: Main
   page_top: 'Page top'
