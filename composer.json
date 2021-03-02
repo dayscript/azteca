@@ -18,6 +18,7 @@
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.4",
         "drupal/adminimal_theme": "^1.6",
+        "drupal/ala": "^1.5",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/bg_image_formatter": "^1.14",
         "drupal/block_class": "^1.3",
