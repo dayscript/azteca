@@ -32,6 +32,7 @@
         "drupal/editor_advanced_link": "^1.8",
         "drupal/field_formatter_class": "^1.4",
         "drupal/field_group": "^3.1",
+        "drupal/honeypot": "^2.0",
         "drupal/link_attributes": "^1.11",
         "drupal/menu_item_extras": "^2.13",
         "drupal/module_filter": "^3.1",
