@@ -157,6 +157,14 @@
       </div>
       {% endif %}
 
+      {% if page.cliente %}
+      <div class="cliente">
+        <div class="">
+          {{ page.cliente }}
+        </div>
+      </div>
+      {% endif %}
+
       <div class="row">
         <main id="main" class=" {{ main_grid }} columns" role="main">
           {% if page.highlighted %}
@@ -171,7 +179,7 @@
           </section>
         </main>
         {% if page.sidebar_first %}
-          <div id="sidebar-first" class="{{ sidebar_first_grid }} columns sidebar ">
+          <div id="sidebar-first" class="{{ sidebar_first_grid }} columns sidebar" data-sticky-container>
             {{ page.sidebar_first }}
           </div>
         {% endif %}

@@ -33,8 +33,10 @@ main{
 				display: none;
 			}
 			.fieldset-wrapper{
-				align-items: center;
-				display: flex;
+				@media (min-width: 640px){
+					align-items: center;
+					display: flex;
+				}
 				.field-name-field-lead p{
 					font-size: 1.6rem;
 					line-height: 1.5em;
@@ -42,8 +44,10 @@ main{
 			}
 		}
 		.field-node--body.field-name-body {
-			padding: 0 16rem;
-			margin-bottom: 3rem;
+			@media (min-width: 640px){
+				padding: 0 16rem;
+				margin-bottom: 3rem;
+			}
 		}
 		.field.field-node--field-image.field-name-field-image{
 			img{

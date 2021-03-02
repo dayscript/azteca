@@ -44,6 +44,12 @@ header {
 							transition: ease all 0.4s;
 						}
 					}
+					#block-menuatencionalcliente,
+					#block-menuinfimportanteparaelusuario{
+						.menu-item{
+							display: block;
+						}
+					}
 					.we-mega-menu-submenu{
 						position: fixed;
 						width: 100%;
@@ -90,13 +96,19 @@ header {
 	background-color: #fff;
 }
 .we-mega-menu-submenu {
-    border-top: 6px solid $primary-color;
+    border-top: 6px solid #f80000;
 	margin-bottom: 2rem;
 	.card-item{
 		margin-bottom: 1rem;
 	}
 }
+.green{
+	.we-mega-menu-submenu {
+		border-top: 6px solid #199509;
+		margin-bottom: 2rem;
+	}
 
+}
 
 .responsive-menu-toggle-icon:before, .responsive-menu-toggle-icon:after, .responsive-menu-toggle-icon span.icon {
     background: $primary-color;
